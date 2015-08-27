@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">testCsound</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="simple_test_name">First Synth</string>
+	<string name="simple_test2_name">Second Synth</string>
+	<string name="load">Load Preset</string>
+</resources>

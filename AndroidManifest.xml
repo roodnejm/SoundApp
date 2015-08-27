@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csounds.examples"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+  <uses-feature android:name="android.hardware.audio.low_latency" android:required="false"/>
+  
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        
+ <!-- MODIFY_AUDIO_SETTINGS is needed to use audio effects such as environmental reverb -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:label="@string/app_name"
+            android:name=".CsoundAndroidActivity" 
+            android:configChanges="orientation"
+			android:screenOrientation="portrait">
+           <intent-filter>
+        <action
+          android:name="android.intent.action.MAIN" />
+        <category
+          android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+        </activity>
+                 
+
+        <activity
+            android:label="@string/simple_test_name"
+            android:name=".tests.SimpleTest1Activity"
+            android:configChanges="orientation"
+			android:screenOrientation="portrait"/>
+        
+        <activity
+            android:label="@string/simple_test2_name"
+            android:name=".tests.SimpleTest2Activity"
+            android:configChanges="orientation"
+			android:screenOrientation="portrait"/>
+        
+         <activity
+            android:label="MultiTouch XY"
+            android:name=".tests.MultiTouchXYActivity"
+            android:configChanges="orientation"
+			android:screenOrientation="portrait"/>
+         
+         <activity
+      android:label="Synth"
+      android:name=".tests.SynthActivity"
+      android:configChanges="orientation"
+      android:screenOrientation="landscape"/>
+           
+         <activity
+            android:label="ILoader Preset Activity"
+            android:name=".tests.ILoaderPresetActivity"
+            android:configChanges="orientation"
+			android:screenOrientation="portrait"/>
+        
+         <activity
+      android:name=".drumrack.DrumMachineActivity"
+      android:label="@string/app_name"
+      android:screenOrientation="portrait">
+
+        
+    </activity>
+         
+    </application>
+      
+</manifest>

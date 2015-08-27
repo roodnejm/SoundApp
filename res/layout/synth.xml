@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/synth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg01"
+    android:orientation="horizontal"
+    android:padding="0dip" >
+
+    <ImageButton
+        android:id="@+id/diode4"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:padding="0dp" />
+
+    <ImageButton
+        android:id="@+id/diode3"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/diode4"
+        android:padding="0dp" />
+
+    <ImageButton
+        android:id="@+id/diode2"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/diode3"
+        android:padding="0dp" />
+
+    <ImageButton
+        android:id="@+id/diode1"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/diode2"
+        android:padding="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/potard1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/diode4"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="true" />
+
+    <RelativeLayout
+        android:id="@+id/potard2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/diode3"
+        android:layout_marginRight="52dp"
+        android:layout_toLeftOf="@id/potard1"
+        android:adjustViewBounds="true" />
+
+    <RelativeLayout
+        android:id="@+id/potard3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/diode2"
+        android:layout_marginRight="52dp"
+        android:layout_toLeftOf="@id/potard2"
+        android:adjustViewBounds="true" />
+
+    <RelativeLayout
+        android:id="@+id/potard4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/diode1"
+        android:layout_marginRight="52dp"
+        android:layout_toLeftOf="@id/potard3"
+        android:adjustViewBounds="true"
+        />
+<RelativeLayout 
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0dip"
+    android:layout_toLeftOf="@id/diode1">
+     <com.csounds.examples.drumrack.LcdScreenView
+        android:id="@+id/lcd_screen"
+        android:layout_width="136dp"
+        android:layout_height="48dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+         />
+
+
+<RelativeLayout 
+       android:layout_width="136dp"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:padding="0dip"
+    android:layout_marginTop="-4dp"
+    android:layout_below="@id/lcd_screen"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="16dp">
+
+
+        <Button
+        android:id="@+id/plusoctavebutton"
+        android:layout_width="54dp"
+        android:layout_height="36dp"
+        android:text="+"       
+        android:textSize="16dp"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        
+        
+         />
+            <Button
+        android:id="@+id/minusoctavebutton"
+        android:layout_width="54dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:text="-"
+        android:padding="0dp"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@id/plusoctavebutton"
+        
+       />
+</RelativeLayout>
+ </RelativeLayout>  
+    <RelativeLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboardsolo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pitchshifter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/pitchshifter36_192"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lateralbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/lateralbar_left"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/metronome"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:text="120.00"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/playbutton"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:text="Play"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/recordbutton"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:text="Record"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/arpbutton"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:text="Apr"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/fader_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/fader_left"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
